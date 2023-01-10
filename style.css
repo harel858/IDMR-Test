@@ -2,11 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-main {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  min-width: 90vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
 }
 
 .root {
@@ -18,6 +14,7 @@ main {
 }
 
 .card {
+  padding: 3em;
   padding: 1em;
   max-width: max-content;
   display: flex;
@@ -95,4 +92,34 @@ span.status.Open {
 .footer .Open {
   color: #2f80ed;
   font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    overflow-x: hidden;
+  }
+  .card {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .card h3 {
+    width: 90%;
+  }
+  .statusContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .footer div {
+    gap: 0;
+  }
 }
