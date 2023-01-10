@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-width: 90vw;
+}
+
+.root {
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.card {
+  padding: 1em;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 2em;
+}
+span {
+  padding: 0.2em;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.5em;
+}
+
+.HOLD {
+  background-color: #ffe4e7;
+}
+span.status.HOLD {
+  background-color: #ee506b !important;
+}
+.Completed {
+  background-color: #daffeb;
+}
+span.status.Completed {
+  background-color: #27ae60;
+}
+.WIP {
+  background-color: #ffedcb;
+}
+span.status.WIP {
+  background-color: #f2994a;
+}
+.Open {
+  background-color: #e4e9ff;
+}
+span.status.Open {
+  background-color: #2f80ed;
+}
+.statusContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card h3 {
+  font-size: 0.9em;
+  width: 30ch;
+}
+.footer {
+  display: flex;
+  gap: 2em;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer div p {
+  min-width: max-content;
+}
+
+.footer .HOLD {
+  color: #ee506b;
+  font-weight: bold;
+}
+.footer .Completed {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.footer .WIP {
+  color: #f2994a;
+  font-weight: bold;
+}
+
+.footer .Open {
+  color: #2f80ed;
+  font-weight: bold;
+}
