@@ -23,6 +23,7 @@
   border-radius: 2em;
 }
 span {
+  width: fit-content;
   padding: 0.2em;
   font-weight: 600;
   color: white;
